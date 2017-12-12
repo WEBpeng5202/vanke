@@ -1,0 +1,543 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+img{
+	display: block;
+}
+/*top*/
+.top{
+	height: 30px;
+	border-bottom:1px solid #ccc;
+	background: #f7f7f7;
+}
+.top .con{
+	width: 1200px;
+	margin: 0 auto;
+}
+.top .con .right1{
+	float: right;
+}
+.top .con .right1 a{
+	display: block;
+	float: left;
+	margin: 5px 0 0 2px;	
+}
+.top .con .right2{
+	display: block;
+	float: right;
+	margin: 5px 10px 0;
+	color: #808080;
+}
+.top .con .right2:hover{
+	color: #B71C20;
+}
+.top .con .right2 img{
+	float: left;
+	margin-right: 5px;
+}
+.top .con .right3{
+	float: right;
+	line-height: 30px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+.top .con .right3 span{
+	color: #808080;
+}
+.top .con .right3 span:nth-child(3){
+	margin: 0 5px;
+}
+.top .con .right3 a{
+	color:#808080;
+}
+/*.top .con .right3 a{
+	margin: 0 10px;
+}*/
+.top .con .right3 a:hover{
+	color: #B71C20;
+}
+
+/*search*/
+.search{
+	width: 1200px;
+	height: 62px;
+	margin: 25px auto 20px;
+}
+.search .search_con{
+	width: 438px;
+	float: right;
+}
+.search .search_con .sc_top{
+	/*width: 438px;*/
+	height: 29px;
+}
+.search .search_con .sc_top .sc_top_left{
+	float: left;
+}
+.search .search_con .sc_top .sc_top_left input{
+	border:0;
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+}
+.search .search_con .sc_top .sc_top_left input:first-child{
+	width: 249px;
+	height: 27px;
+	border: 1px solid #ccc;
+	padding: 0 5px;
+	font-size: 14px;
+}
+.search .search_con .sc_top .sc_top_left input:last-child{
+	width: 49px;
+	height: 29px;
+	background: #B71C20;
+	color: #fff;
+}
+.search .search_con .sc_top .sc_top_right{
+	width: 107px;
+	height: 29px;
+	line-height: 29px;
+	float: right;
+	background: url(../img/vanclsprite.png) no-repeat scroll -154px 0px;
+}
+.search .search_con .sc_top .sc_top_right a{
+	padding: 0 0 0 30px;
+	color: #FFF;
+}
+.search .search_con .sc_bottom{
+	padding: 10px 0 0 15px;
+	height: 36px;
+	line-height: 18px;
+}
+.search .search_con .sc_bottom span{
+	font-size: 16px;
+	color: #727171;
+}
+.search .search_con .sc_bottom a{
+	font-size: 12px;
+	color: #727171;
+	margin-left: 2px;
+}
+
+/*导航栏*/
+.nav{
+	width: 1200px;
+	height: 46px;
+	background: url(http://i4.vanclimg.com/cms/20160923/logo18546.png) no-repeat scroll;
+	margin: 30px auto;
+}
+.nav>a{
+	display: inline-block;
+	height: 46px;
+}
+.nav ul{
+	width: 1000px;
+	margin-top: 14px;
+	margin-left:  8px;
+	float: right;
+}
+.nav ul li{
+	float: left;
+	width: 99px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	position: relative;
+	top: 0;
+	left:0;
+}
+
+.nav ul li .sub-nav{
+	position: absolute;
+	top: 32px;
+	left: -2px;
+	z-index: 20;
+	width: 100%;
+	background-color: #fff;	
+	display: none;
+}
+.nav ul li dl dd span{
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #B81C22;
+	overflow: hidden;
+}
+.nav ul li a{
+	color: #727171;
+}
+.nav ul li>span{
+	line-height: 32px;
+	float: right;
+}
+.nav ul li a:hover{
+	color: #a10000;
+	font-weight: 600;
+}
+/*.nav ul li:hover .sub-nav{
+	opacity: 1;
+}*/
+
+.banner{
+	width: 1200px;
+	height: 535px;
+	margin: 0 auto;
+	background: #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.banner ul{
+	overflow: hidden;
+	height: 535px;
+}
+.banner .bannerImg li{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.banner .dot{
+	position: absolute;
+	bottom: 20px;
+	left: 561px;
+	right: 0;
+	margin: 0 auto;
+}
+.banner .dot ul{
+	overflow: hidden;
+	width: 78px;
+	height: 26px;
+}
+.banner .dot ul li{
+	float: left;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #23527c;
+	margin: 0 5px;
+	cursor: pointer;
+}
+.banner .dot .active{
+	background: #c1383e;
+}
+.banner .dot ul li:hover{
+	background: #c1383e;
+}
+.banner .left{
+	position: absolute;
+	top: 235px;
+	width: 28px;
+	height: 62px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 65px;
+	left: 10px;
+	background:  url(../img/focus_lr0918.png) no-repeat  0 0;
+}
+.banner .right{
+	position: absolute;
+	top: 235px;
+	width: 28px;
+	height: 62px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 65px;
+	right: 10px;
+	background: url(../img/focus_lr0918.png) no-repeat  -58px 0;
+}
+.banner .left:hover{
+	background: url(../img/focus_lr0918.png) no-repeat  0 -62px;
+}
+
+.banner .right:hover{
+	background: url(../img/focus_lr0918.png) no-repeat  -58px -62px;
+}
+/*广告部分*/
+.banner_bt{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.banner_bt .left{
+	width: 48%;
+	float: left;
+}
+.banner_bt img{
+	width: 600px;
+	height: 40px;
+}
+.banner_bt .right{
+	width: 48%;
+	float: right;
+}
+
+/*秒杀*/
+.every{
+	width: 1200px;
+	margin: 0 auto;
+}
+.every .title{
+	height: 120px;
+	overflow: hidden;
+}
+.every .title div{
+	height: 60px;
+	margin-top: 30px;
+	background: url(http://i2.vanclimg.com/cms/20170814/ms_bg0814.png) no-repeat scroll 0px 0px;
+}
+.every .title div span{
+	float: right;
+	line-height: 60px;
+	margin-right: 14px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+}
+.every .title div span em{
+	font-size: 24px;
+	color: #a10000;
+	margin-left: 24px;
+}
+.every .title div span em:nth-child(1){
+	margin-left: 4px;
+}
+.every .con{
+	overflow: hidden;
+}
+.every .con .con_product{
+	float: left;
+	margin:  0 8px 0 0;
+}
+.every .con .con_product:nth-child(5){
+	margin-right: 0;
+}
+
+/*内容部分*/
+.content{
+	margin: 0 auto;
+	width: 1200px;
+}
+	/*新品推荐*/
+.new .title, .more .title{
+	width: 1200px;
+	font-size: 18px;
+	height: 50px;
+	margin: 20px 0 30px;
+	font-family: "Microsoft YaHei";
+	font-weight: normal;
+	color: #ccc;
+	text-align: center;
+	line-height: 50px;
+}
+.new .con{
+	width: 1162px;
+	padding: 0 19px;
+	overflow: hidden;
+}
+.new .con div{
+	float: left;
+	margin: 0 25px 20px 0;
+}
+.new .con div:nth-child(4n+2){
+	margin-right: 24px;
+}
+.new .con div:nth-child(4n){
+	margin-right: 0;
+}
+	/*更多精品*/
+.more .con{
+	width: 1200px;
+	overflow: hidden;
+}
+.cl,.cz,.cr{
+	float: left;
+}
+.cl,.cz{
+	margin-right: 17px;
+}
+.cl div:nth-child(2),.cr div:nth-child(2){
+	margin-bottom: 16px;
+}
+.cz div:nth-child(2n){
+	margin-bottom: 16px;
+}
+.czb,.czt{
+	margin-bottom: 16px;
+} 
+.more .con .text{
+	height: 68px;
+	overflow: hidden;
+	border:1px solid #ccc;
+	border-top: 0;
+	padding: 0 12px;
+	line-height: 68px;
+	font-size: 14px;
+}
+.more .con .text div{
+	float: left;
+}
+.more .con .text div:nth-child(2){
+	float: right;
+}
+.more .con .text div:nth-child(2) a{
+	color: #a10000;
+}
+.footer{
+	width: 1118px;
+	height: 284px;
+	padding: 0 40px;
+	margin: 0 auto;
+	border:1px solid ;
+}
+.footer ul{
+	overflow: hidden;
+}
+.footer ul li{
+	float: left;
+	margin: 33px 0 24px 0;
+	width: 370px;
+	height: 138px;
+}
+.footer ul li p{
+	
+}
+.footer ul li:nth-child(1) p:first-child{
+	height: 42px;
+	margin: 15px 0 30px 0;
+}
+.footer ul li:nth-child(1) p:last-child{
+	width: 156px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	margin: 0 auto;
+	background: #B81C22;
+	font-size: 14px;
+	color: #fff;
+}
+.footer ul li p img{
+	display: block;
+	margin: 0 auto;
+}
+.footer ul li:nth-child(2){
+	border-left: 1px solid #727171;
+	border-right: 1px solid #727171;
+}
+.footer ul li:nth-child(2) a p:nth-child(n+2){
+	color: #727171;
+	text-align: center;
+	margin: 0;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+}
+.footer ul li:nth-child(2) p:first-child{
+	margin: 20px auto;
+}
+.footer ul li:nth-child(3) p:nth-child(1){
+	height: 104px;
+}
+.footer ul li:nth-child(3) p:nth-child(2){
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 14px;
+}
+.footer ul li:nth-child(3) p:nth-child(1) img{
+	width: 104px;
+	height: 104px;
+}
+.footer ul li:nth-child(3) p:nth-child(2){
+	margin-top: 10px;
+}
+.footer ul li:nth-child(3) p:nth-child(2) span{
+	color: #a10000;
+}
+.footer .footer_btm{
+	width: 1118px;
+	height: 57px;
+	margin-top: 10px;
+	background: #f8f8f8;
+	line-height: 57px;
+}
+.footer .footer_btm span{
+	padding: 0 55px;
+	border-right: 1px solid #dadadb; 
+}
+.footer .footer_btm span:last-child{
+	border: none;
+}
+.footer .footer_btm span a{
+	color: #323232;
+}
+hr{
+	margin-top: 25px;
+}
+.foot{
+	width: 1200px;
+	margin:0 auto;
+	text-align: center;
+	color: #3e3a39;
+}
+.foot p{
+	margin-top: 10px;
+}
+.foot div{
+	width: 980px;
+	height: 45px;
+	margin: 25px auto;
+	overflow: hidden;
+}
+.foot div a{
+	margin: 0 10px;
+	display: inline-block;
+}
+.foot div a img{
+	width: 120px;
+	height: 39px;
+}
+.foot div a:nth-child(1){
+	width: 113px;
+	height: 42px;
+	background: url(../img/spritesbgtop.png) no-repeat 0 -581px;
+}
+.foot div a:nth-child(2){
+	width: 156px;
+	height: 45px;
+	background: url(../img/spritesbgtop.png) no-repeat 0 -629px;
+}
+.foot div a:nth-child(3){
+	width: 96px;
+	height: 42px;
+	background: url(../img/spritesbgtop.png) no-repeat 0 -674px;
+}
+.foot div a:nth-child(4){
+	width: 101px;
+	height: 42px;
+	background: url(../img/spritesbgtop.png) no-repeat -96px -674px;
+}
+.foot div a:nth-child(5){
+	width: 42px;
+	height: 42px;
+	background: url(../img/spritesbgtop.png) no-repeat -202px -674px;
+}
+.backTop{
+	width: 73px;
+	height: 205px;
+	position: fixed;
+	right: 5px;
+	bottom: 20px;
+	background:url(../img/baywindow.png) no-repeat center;
+}
+.backTop a{
+	display: block;
+	width: 73px;
+	height: 76px;
+}
